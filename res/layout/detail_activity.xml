@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tvtitle"
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:textColor="#CCCCCC"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    
+    <ImageView
+        android:contentDescription="@string/none"
+        android:id="@+id/imgdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        android:maxWidth="250dp"
+        android:src="@drawable/profile" />
+
+    <ProgressBar
+        android:id="@+id/pbardesc"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="35dp" >
+
+        <TextView
+            android:id="@+id/tvDate"
+     		android:textColor="#cccccc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/none" />
+
+        <TextView
+			android:textColor="#cccccc"
+            android:layout_weight="50"
+			android:padding="10dp"
+            android:id="@+id/tvVenue"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/none" />
+    </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:paddingTop="0dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvdesc"
+    	android:textColor="#cccccc"
+    	android:background="#88000000"
+        android:paddingTop="5dp"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="660dp"
+        android:text="@string/description"
+        />
+	</ScrollView>
+
+</LinearLayout>

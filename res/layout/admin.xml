@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <Button
+        android:id="@+id/admin_view"
+		android:textColor="#cccccc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+		android:background="#88000000"        
+        android:padding="3dp"
+        android:text="View Notices" />
+
+    <Button
+        android:id="@+id/admin_upload"
+		android:textColor="#cccccc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+		android:background="#88000000"        
+        android:padding="3dp"
+        android:text="Upload Notice" />
+
+</LinearLayout>
